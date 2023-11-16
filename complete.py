@@ -140,7 +140,7 @@ def get_triangles(filename):
         new_triangle = Triangle(side_x, side_y, side_z)
         triangle_objects.append(new_triangle)
 
-    # Return the list of Rectangle objects
+    # Return the list of Triangle objects
     return triangle_objects
 
 
