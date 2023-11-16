@@ -5,7 +5,7 @@ Author: Asher Downs
 File: triangle.py
 Purpose: Defines a Triangle object, inherited from the abstract class Shape.
 """
-
+import math
 from shapes.shape import Shape
 
 
