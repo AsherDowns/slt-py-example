@@ -132,13 +132,16 @@ def get_triangles(filename):
     # Manually iterate over the JSON dictionaries in the list
     # of triangles. Create a new Triangle object for each one
     # and add it to the list.
-    triangle_objects = []
-    for tri in data["triangle_list"]:
-        side_x = tri["x"]
-        side_y = tri["y"]
-        side_z = tri["z"]
-        new_triangle = Triangle(side_x, side_y, side_z)
-        triangle_objects.append(new_triangle)
+    # triangle_objects = []
+    # for tri in data["triangle_list"]:
+    #    side_x = tri["x"]
+    #    side_y = tri["y"]
+    #    side_z = tri["z"]
+    #    new_triangle = Triangle(side_x, side_y, side_z)
+    #    triangle_objects.append(new_triangle)
+
+    # List comprehension method of preceding 'for' loop
+    triangle_objects = [Triangle(tri["x"], tri["y"], tri["z"]) for tri in data["triangle_list"]]
 
     # Return the list of Triangle objects
     return triangle_objects
