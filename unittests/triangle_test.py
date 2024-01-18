@@ -1,5 +1,5 @@
 """
-Author: Nick Russo
+Author: Asher Downs
 File: triangle_test.py
 Purpose: Unit tests for the Triangle class.
 """
